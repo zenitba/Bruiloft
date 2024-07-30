@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap');
+  /* Reset */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #CECDC6;
+    font-family: 'Noto Serif Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #E4DCCE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 33px 23px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 6%;
+  }
+
+  .names-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+  }
+
+  .upload-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    background-color: #E4DCCE;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    top: 75%;
+    left: 32%;
+    position: absolute;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* .upload-button:hover {
+    background-color: #f0f0f0;
+  } */
+
+  .flowers {
+    position: absolute;
+    top: -5%;
+    left: -8%;
+    width: 250px;
+    height: auto;
+    transform: scaleX(1);
+    z-index: -2;
+
+  }
+
+  .flowers-right {
+    position: absolute;
+    bottom: -5%;
+    right: -7%;
+    width: 250px;
+    height: auto;
+    transform: scaleX(-1);
+
+  }
+
+  .couple {
+    position: absolute;
+    bottom: -20px;
+    left: -83px;
+    width: 300px;
+    height: auto;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      padding: 20px;
+    }
+
+    .header {
+      font-size: 2rem;
+    }
+
+    .names-image {
+      max-width: 90%;
+    }
+
+    .flowers,
+    .flowers-right {
+      max-width: 190px;
+    }
+
+    .couple {
+      max-width: 270px;
+    }
+
+    .upload-button {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
+</style>
+
+<main>
+  <section class="card">
+    <img src="/3.svg" alt="Bloemen" class="flowers" />
+    <img src="/3.svg" alt="Bloemen" class="flowers-right" />
+    <header class="header">Welkom op Onze Bruiloft</header>
+    <img src="/2.svg" alt="Abiel & Helen" class="names-image" />
+    <!-- <button class="upload-button" href>Upload Hier Uw Foto's</button> -->
+    <a href="https://app.eventlens.ai/upload/tc3jgn" class="upload-button">Upload Hier Uw Foto's</a>
+    <img src="/1 copy.svg" alt="Abiel en Helen" class="couple" />
+  </section>
+</main>
