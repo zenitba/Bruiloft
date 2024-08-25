@@ -8,9 +8,8 @@
       <img src="/Koppel.png" width="300" height="300" class="couple" loading="lazy"/>
     </section>
   </main>
-  <style>
 
-  
+  <style>
     .card {
       background-color: #E4DCCE;
       padding: 20px;
@@ -25,7 +24,7 @@
     }
   
     .header {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: bold;
       margin-top: 6%;
     }
