@@ -3,7 +3,7 @@
       <img src="/bloemen.png" class="flowers"  />
       <img src="/bloemen.png" width="250" height="250" class="flowers-right" loading="lazy" />
       <header class="header">Welkom op Onze Bruiloft</header>
-      <img src="/Logo.png" width="400" height="200" class="names-image"loading="lazy" />
+      <img src="/logo.png" width="400" height="200" class="names-image"loading="lazy" />
       <a href="https://app.eventlens.ai/upload/tc3jgn" class="upload-button">Upload Hier Uw Foto's</a>
       <img src="/Koppel.png" width="300" height="300" class="couple" loading="lazy"/>
     </section>
